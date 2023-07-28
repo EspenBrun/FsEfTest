@@ -1,4 +1,5 @@
 source https://www.nuget.org/api/v2
 
+nuget EntityFrameworkCore.FSharp 6.0.7
 nuget FSharp.Core
 nuget Pomelo.EntityFrameworkCore.MySql 6.0.2

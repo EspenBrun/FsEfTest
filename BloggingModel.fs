@@ -8,6 +8,7 @@ open EntityFrameworkCore.FSharp.Extensions
 type Blog = {
     [<Key>] Id: int
     Url: string
+    MaybeAuthor: string option
 }
 
 type BloggingContext() =  

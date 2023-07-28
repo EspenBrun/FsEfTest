@@ -20,4 +20,6 @@ type BloggingContext() =
         builder.RegisterOptionTypes() // enables option values for all entities
 
     override __.OnConfiguring(options: DbContextOptionsBuilder) : unit =
-        options.UseSqlite("Data Source=blogging.db") |> ignore
+        let connectionString = "Server=localhost; Port=3306; Database=fseftestdb; Uid=root;"
+        let serverVersion = ServerVersion.AutoDetect(connectionString)
+        options.UseMySql(connectionString, serverVersion) |> ignore

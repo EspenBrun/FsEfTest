@@ -10,10 +10,27 @@ open Microsoft.EntityFrameworkCore.Migrations
 open Microsoft.EntityFrameworkCore.Storage.ValueConversion
 
 [<DbContext(typeof<BloggingModel.BloggingContext>)>]
-type BloggingContextModelSnapshot() =
-    inherit ModelSnapshot()
+[<Migration("20230728222708_MaybeAuthor")>]
+type MaybeAuthor() =
+    inherit Migration()
 
-    override this.BuildModel(modelBuilder: ModelBuilder) =
+    override this.Up(migrationBuilder:MigrationBuilder) =
+        migrationBuilder.AddColumn<string>(
+            name = "MaybeAuthor"
+            ,table = "Blogs"
+            ,``type`` = "longtext"
+            ,nullable = true
+            ).Annotation("MySql:CharSet", "utf8mb4") |> ignore
+
+
+    override this.Down(migrationBuilder:MigrationBuilder) =
+        migrationBuilder.DropColumn(
+            name = "MaybeAuthor"
+            ,table = "Blogs"
+            ) |> ignore
+
+
+    override this.BuildTargetModel(modelBuilder: ModelBuilder) =
         modelBuilder
             .HasAnnotation("ProductVersion", "6.0.13")
             .HasAnnotation("Relational:MaxIdentifierLength", 64) |> ignore

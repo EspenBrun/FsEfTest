@@ -1,3 +1,44 @@
 NUGET
   remote: https://www.nuget.org/api/v2
     FSharp.Core (6.0.7)
+    Microsoft.EntityFrameworkCore (7.0.9) - restriction: >= net6.0
+      Microsoft.EntityFrameworkCore.Abstractions (>= 7.0.9) - restriction: >= net6.0
+      Microsoft.EntityFrameworkCore.Analyzers (>= 7.0.9) - restriction: >= net6.0
+      Microsoft.Extensions.Caching.Memory (>= 7.0) - restriction: >= net6.0
+      Microsoft.Extensions.DependencyInjection (>= 7.0) - restriction: >= net6.0
+      Microsoft.Extensions.Logging (>= 7.0) - restriction: >= net6.0
+    Microsoft.EntityFrameworkCore.Abstractions (7.0.9) - restriction: >= net6.0
+    Microsoft.EntityFrameworkCore.Analyzers (7.0.9) - restriction: >= net6.0
+    Microsoft.EntityFrameworkCore.Relational (6.0.20) - restriction: >= net6.0
+      Microsoft.EntityFrameworkCore (>= 6.0.20) - restriction: >= net6.0
+      Microsoft.Extensions.Configuration.Abstractions (>= 6.0) - restriction: >= net6.0
+    Microsoft.Extensions.Caching.Abstractions (7.0) - restriction: >= net6.0
+      Microsoft.Extensions.Primitives (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Caching.Memory (7.0) - restriction: >= net6.0
+      Microsoft.Extensions.Caching.Abstractions (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Primitives (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Configuration.Abstractions (7.0) - restriction: >= net6.0
+      Microsoft.Extensions.Primitives (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.DependencyInjection (7.0) - restriction: >= net6.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.DependencyInjection.Abstractions (7.0) - restriction: >= net6.0
+    Microsoft.Extensions.Logging (7.0) - restriction: >= net6.0
+      Microsoft.Extensions.DependencyInjection (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Logging.Abstractions (7.0.1) - restriction: >= net6.0
+    Microsoft.Extensions.Options (7.0.1) - restriction: >= net6.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Primitives (>= 7.0) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Primitives (7.0) - restriction: >= net6.0
+      System.Runtime.CompilerServices.Unsafe (>= 6.0) - restriction: || (>= net462) (>= netstandard2.0)
+    MySqlConnector (2.2.7) - restriction: >= net6.0
+    Pomelo.EntityFrameworkCore.MySql (6.0.2)
+      Microsoft.EntityFrameworkCore.Relational (>= 6.0.7 < 7.0) - restriction: >= net6.0
+      Microsoft.Extensions.DependencyInjection (>= 6.0) - restriction: >= net6.0
+      MySqlConnector (>= 2.1.2) - restriction: >= net6.0
+    System.Runtime.CompilerServices.Unsafe (6.0) - restriction: >= net6.0
